@@ -1,0 +1,57 @@
+p {
+    font-family: Roboto;
+    /* p refers paragraph, all paragraph will use same font family */
+    /* This has low priority than other selectors */
+}
+/* CSS Specificity : specific selector has more specifity then common selection */
+
+.video-title {
+    
+    font-weight: bold;
+    font-size: 20px;
+    width: 350px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.video-stats {
+    font-size: 14px;
+    color: rgb(96,96,96);
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.video-author {
+    font-size: 14px;
+    color: rgb(96,96,96);
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+
+.video-description {
+    font-size: 14px;
+    color: rgb(96,96,96);
+    width: 350px;
+    line-height: 22px;
+    margin-bottom: 100px;
+}
+
+.apple-text {        
+    margin-bottom: 50px;
+    font-size: 14px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.span-apple-text {
+    cursor: pointer;
+    margin-left: 12px;
+}
+
+.span-apple-text:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Prctice</title>
+</head>
+<body style="
+    height: 3000px;
+    padding-top: 50px;
+    padding-left: 60px;
+">
+
+<!-- z-index: to prootoxed the overlap of elements -->
+    <div style="
+    background-color: black;
+    color: white;
+    position: fixed;
+    top:0px;
+    left:0px;
+    right: 0px;
+    height: 40px;
+    z-index: 0;
+    ">
+    Header
+    </div>
+
+    <div style="
+    background-color: lightgreen;
+    position: fixed;
+    left:0;
+    top:40px;
+    bottom: 0px;
+    ">
+        Sidebar
+    </div>
+
+    <!-- Position absolute -->
+    <div style="
+    position: absolute;
+
+    ">
+``Absolute
+
+</div>
+
+    <div style="
+        background-color: lightblue;
+        height: 200px;
+        width: 200px;
+        position: static;
+        
+        ">div 1</div>
+    <div style="
+    background-color: lightpink;
+    height: 200px;
+    width: 200px;">div 2</div>
+</body>
+</html>

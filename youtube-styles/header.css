@@ -1,9 +1,18 @@
-
 .header {
     height: 55px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: fixed;    
+    top: -3px;
+    left: -3px;
+    right: -3px;    
+    background-color: white;
+    /* adding the border */
+    border-bottom-width: 1px;
+    border-style: solid;
+    border-bottom-color: rgb(192,192,192);
+    z-index: 100;
 }
 
 .left-section {
@@ -31,7 +40,7 @@
 }
 
 .search-bar {
-    flex: 1;
+    flex: 1; /*to set movable search button along with page size*/
     height: 36px;
     padding-left: 12px;
     font-size: 16px;
@@ -39,8 +48,8 @@
     border-style: solid;
     border-color: grey;
     border-radius: 2px;
-    box-shadow: inset 1px 2px 5px rgba(0,0,0,0.05);
-    width:0;
+    box-shadow: inset 1px 2px 5px rgba(0,0,0,0.05); /*shadow inside search button*/
+    width:0; /*Search bar to shrink*/
 }
 
 .search-bar::placeholder {
@@ -54,26 +63,26 @@
     border-width: 1px;
     border-style: solid;
     border-color: rgb(192,192,192);
-    margin-left: -1px;
+    margin-left: -1px; /*To override the spacing to single line*/
     margin-right: 10px;
     border-radius: 2px;
 }
 
 .search-icon {
     height: 25px;
-    margin-top: 4px;
+    margin-top: 4px; /*to psuh button down*/
 }
 
 .voice-search-icon-button {
     height: 40px;
     width: 40px;
-    border-radius: 20px;
-    border: none;    
-    background-color: rgb(240, 240, 240);
+    border-radius: 20px; /*To male icon round*/
+    border: none;   /*To remove border*/  
+    background-color: rgb(245, 245,     245);
 }
 
 .voice-search-icon {
-    height: 20px;
+    height: 24px;
     margin-top: 4px;
 }
 
@@ -81,9 +90,9 @@
     display: flex;
     align-items: center;
     margin-right: 20px;
-    justify-content: space-between;
+    justify-content: space-between; /*to align them equally in space*/
     width: 250px;
-    flex-shrink: 0;
+    flex-shrink: 0;/*to not shrink items upon reducing the page size*/
 }
 
 .upload-icon {
@@ -101,4 +110,20 @@
 .current-user-picture {
     height: 40px;
     border-radius: 20px;
+}
+
+.notifications-icon-container {
+    position: relative;
+}
+
+.notifications-count{
+    position: absolute;
+    top: 0;
+    right:0;
+    background-color: red;
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    padding: 4px;
+    border-radius: 10px;
 }
